@@ -1,6 +1,5 @@
 
 while True:
-    print("**** Calculator ****")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
 
@@ -11,7 +10,7 @@ while True:
     print("4: Division")
     print("5: Exit")
 
-    choice = input("Enter the operation (1-5): ")
+    choice = input("Enter the operation: ")
 
     if choice == '1':
         result = num1 + num2
@@ -32,7 +31,7 @@ while True:
         print("Exiting the calculator.")
         break
     else:
-        print("Invalid choice. Please enter a number between 1 and 5.")
+        print("Invalid choice.")
     
     next_calculation = input("Do you want to continue? (1:yes 0:no): ")
     if next_calculation.lower() != "1":
